@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Authentication - MEV REST API</title>
+  <title>Observations - MEV REST API</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -19,8 +19,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Authentication";
-    var mkdocs_page_input_path = "auth.md";
+    var mkdocs_page_name = "Observations";
+    var mkdocs_page_input_path = "observations.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -60,19 +60,19 @@
                 <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../api/">Intro</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="#">Data Structures</a>
-    <ul>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Data Structures</a>
+    <ul class="current">
                 <li class="toctree-l2"><a class="reference internal" href="../attributes/">Attributes</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../observations/">Observations</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Observations</a>
+    <ul class="current">
+    </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../workspaces/">Workspaces</a>
                 </li>
     </ul>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Authentication</a>
-    <ul class="current">
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../auth/">Authentication</a>
                     </li>
                 </ul>
       </div>
@@ -96,14 +96,18 @@
     
       
         
+          <li>Data Structures &raquo;</li>
+        
+      
+        
           <li>API &raquo;</li>
         
       
     
-    <li>Authentication</li>
+    <li>Observations</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/qbrc-cnap/mev-backend/edit/master/docs/auth.md"
+        <a href="https://github.com/qbrc-cnap/mev-backend/edit/master/docs/observations.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -114,7 +118,27 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="docs-on-authentication"><a class="toclink" href="#docs-on-authentication">Docs on authentication</a></h2>
+                <p><a id="observations"></a></p>
+<h3 id="observations"><a class="toclink" href="#observations">Observations</a></h3>
+<p>We adopt the convention from statistical learning of referring to <code>Observation</code>s.  In an experimental context, <code>Observation</code>s are analogous to samples.  That is, each <code>Observation</code> has one or more <code>Feature</code>s associated with it (e.g. gene expressions for 30,000 genes).</p>
+<p>We use <code>Observation</code>s to hold metadata about data that we manipulating in MEV.  We can attach <a href="../attributes/">attributes</a> to these to allow users to set experimental groups, or other information usedful for visualization or filtering.</p>
+<div class="autodoc">
+<div class="autodoc-signature"><em>class </em><code>api.data_structures.observation.<strong>Observation</strong></code><span class="autodoc-punctuation">(</span><em class="autodoc-param">id</em><span class="autodoc-punctuation">, </span><em class="autodoc-param">attribute_dict={}</em><span class="autodoc-punctuation">)</span></div>
+<div class="autodoc-docstring"><p>An <code>Observation</code> is the generalization of a "sample" in the typical context
+of biological studies.  One may think of samples and observations as
+interchangeable concepts.  We call it an observation so that we are not
+limited by this convention, however.</p>
+<p><code>Observation</code> instances act as metadata and can be used to filter and subset
+the data to which it is associated/attached.</p>
+<p>An <code>Observation</code> is structured as:</p>
+<pre class="codehilite"><code>{
+    &quot;id&quot;: &lt;string identifier&gt;,
+    &quot;attributes&quot;: {
+        &quot;keyA&quot;: &lt;Attribute&gt;,
+        &quot;keyB&quot;: &lt;Attribute&gt;
+    }
+}</code></pre></div>
+</div>
               
             </div>
           </div>
@@ -122,8 +146,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../workspaces/" class="btn btn-neutral float-right" title="Workspaces">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-        <a href="../workspaces/" class="btn btn-neutral" title="Workspaces"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+        <a href="../attributes/" class="btn btn-neutral" title="Attributes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -151,8 +177,10 @@
           <a href="https://github.com/qbrc-cnap/mev-backend/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../workspaces/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../attributes/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../workspaces/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
