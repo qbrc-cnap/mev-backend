@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Workspaces - MEV REST API</title>
+  <title>Resources - MEV REST API</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -19,8 +19,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Workspaces";
-    var mkdocs_page_input_path = "workspaces.md";
+    var mkdocs_page_name = "Resources";
+    var mkdocs_page_input_path = "resources.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -66,11 +66,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../elements/">Observations and Features</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">Workspaces</a>
+                <li class="toctree-l2"><a class="reference internal" href="../workspaces/">Workspaces</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Resources</a>
     <ul class="current">
     </ul>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../resources/">Resources</a>
                 </li>
     </ul>
                     </li>
@@ -106,10 +106,10 @@
         
       
     
-    <li>Workspaces</li>
+    <li>Resources</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/qbrc-cnap/mev-backend/edit/master/docs/workspaces.md"
+        <a href="https://github.com/qbrc-cnap/mev-backend/edit/master/docs/resources.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -120,15 +120,80 @@
           <div role="main">
             <div class="section">
               
-                <h3 id="workspaces"><a class="toclink" href="#workspaces">Workspaces</a></h3>
+                <h3 id="resources"><a class="toclink" href="#resources">Resources</a></h3>
 <div class="autodoc">
-<div class="autodoc-signature"><em>class </em><code>api.models.workspace.<strong>Workspace</strong></code><span class="autodoc-punctuation">(</span><em class="autodoc-param">*args</em><span class="autodoc-punctuation">, </span><em class="autodoc-param">**kwargs</em><span class="autodoc-punctuation">)</span></div>
-<div class="autodoc-docstring"><p>A <code>Workspace</code> is a way to logically group the files and and analyses
-that are part of a user's work.</p>
-<p>Users can have multiple <code>Workspace</code>s to separate distinct analyses.</p>
-<p>Data, files, and analyses are grouped under a <code>Workspace</code> such that all
-information related to the analyses, including analysis history, is captured
-the <code>Workspace</code>.</p></div>
+<div class="autodoc-signature"><em>class </em><code>api.models.resource.<strong>Resource</strong></code><span class="autodoc-punctuation">(</span><em class="autodoc-param">*args</em><span class="autodoc-punctuation">, </span><em class="autodoc-param">**kwargs</em><span class="autodoc-punctuation">)</span></div>
+<div class="autodoc-docstring"><p>A <code>Resource</code> is an abstraction of data.  It represents some
+piece of data we are analyzing or manipulating in the course of
+an analysis workflow.</p>
+<p><code>Resource</code>s are most often represented by flat files, but their
+physical storage is not important.  They could be stored locally
+or in cloud storage accessible to MEV.</p>
+<p>Various "types" of <code>Resource</code>s implement specific constraints
+on the data that are important for tracking inputs and outputs of
+analyses.  For example, if an analysis module needs to operate on
+a matrix of integers, we can enforce that the only <code>Resource</code>s
+available as inputs are those identified (and verified) as
+<code>IntegerMatrix</code> "types".</p>
+<p>Note that we store all types of <code>Resource</code>s in the database as
+a single table and maintain the notion of "type" by a
+string-field identifier.  Creating specific database tables for
+each type of <code>Resource</code> would be unnecessary.  By connecting the
+string stored in the database with a concrete implementation class
+we can check the type of the <code>Resource</code>.</p>
+<p><code>Resource</code>s are not active (<code>is_active</code> flag in the database) until their "type"
+has been verified.  API users will submit the intended type with
+the request and the backend will check that.  Violations are
+reported and the <code>Resource</code> remains inactive (<code>is_active=False</code>).</p>
+<p>Some additional notes:</p>
+<ul>
+<li>
+<p><code>Resource</code>s are owned by users and <em>can</em> be added to a <code>Workspace</code>.
+However, that is not required-- <code>Resource</code>s can be "unattached".</p>
+</li>
+<li>
+<p>Regular users (non-admins) can't create new <code>Resource</code> directly via the API.
+The only way they can create a <code>Resource</code> is indirectly by adding a new upload.</p>
+</li>
+<li>
+<p>When a <code>Resource</code> is added to a <code>Workspace</code>, a new copy is made.  This
+maintains the state of the original <code>Resource</code>.  In this way, the same
+original file can be added to multiple <code>Workspace</code>s but users do not have
+to worry that modifications in one <code>Workspace</code> will affect those in other
+<code>Workspace</code>s.</p>
+</li>
+<li>
+<p><code>Resource</code>s can be made "public" so that others can view and import
+them.  Once another user chooses to import the file, a copy is made and
+that new user has their own copy.  If a <code>Resource</code> is later made "private"
+then any files that have been "used" by others <em>cannot</em> be recalled.</p>
+</li>
+<li>
+<p><code>Resource</code>s can be removed from a <code>Workspace</code>, but only if they have not
+been used for any analyses/operations.</p>
+</li>
+<li>
+<p><code>Resource</code>s cannot be transferred from one <code>Workspace</code> to another, but
+they can be copied.</p>
+</li>
+<li>
+<p>A change in the type of the <code>Resource</code> can be requested.  Until the
+validation of that change is complete, the <code>Resource</code> is made private and
+inactive.</p>
+</li>
+<li>
+<p>Admins can make essentially any change to <code>Resources</code>, including creation.
+However, they must be careful to maintain the integrity of the database
+and the files they point to.</p>
+</li>
+<li>
+<p>In a request to create a <code>Resource</code> via the API, the <code>resource_type</code>
+field can be blank/null.  The type can be inferred from the path of the
+resource.  We can do this because only admins are allowed to create via the API
+and they should only generate such requests if the resource type can be
+inferred (i.e. admins know not to give bad requests to the API...)</p>
+</li>
+</ul></div>
 </div>
               
             </div>
@@ -137,10 +202,10 @@ the <code>Workspace</code>.</p></div>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../resources/" class="btn btn-neutral float-right" title="Resources">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../auth/" class="btn btn-neutral float-right" title="Authentication">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../elements/" class="btn btn-neutral" title="Observations and Features"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../workspaces/" class="btn btn-neutral" title="Workspaces"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -168,10 +233,10 @@ the <code>Workspace</code>.</p></div>
           <a href="https://github.com/qbrc-cnap/mev-backend/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../elements/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../workspaces/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../resources/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../auth/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
