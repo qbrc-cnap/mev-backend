@@ -131,16 +131,16 @@
         }
       }
     },
-    "/api/users/{id}/": {
+    "/api/users/{user_uuid}/": {
       "get": {
         "operationId": "RetrieveCustomUser",
         "description": "Retrieves a specific user.\n\nAdmins may view/modify/delete any user.\n\nNon-admins may only view/modify/delete their own user instance.",
         "parameters": [
           {
-            "name": "id",
+            "name": "user_uuid",
             "in": "path",
             "required": true,
-            "description": "A unique integer value identifying this user.",
+            "description": "A UUID string identifying this user.",
             "schema": {
               "type": "string"
             }
@@ -177,10 +177,10 @@
         "description": "Retrieves a specific user.\n\nAdmins may view/modify/delete any user.\n\nNon-admins may only view/modify/delete their own user instance.",
         "parameters": [
           {
-            "name": "id",
+            "name": "user_uuid",
             "in": "path",
             "required": true,
-            "description": "A unique integer value identifying this user.",
+            "description": "A UUID string identifying this user.",
             "schema": {
               "type": "string"
             }
@@ -278,10 +278,10 @@
         "description": "Retrieves a specific user.\n\nAdmins may view/modify/delete any user.\n\nNon-admins may only view/modify/delete their own user instance.",
         "parameters": [
           {
-            "name": "id",
+            "name": "user_uuid",
             "in": "path",
             "required": true,
-            "description": "A unique integer value identifying this user.",
+            "description": "A UUID string identifying this user.",
             "schema": {
               "type": "string"
             }
@@ -367,10 +367,10 @@
         "description": "Retrieves a specific user.\n\nAdmins may view/modify/delete any user.\n\nNon-admins may only view/modify/delete their own user instance.",
         "parameters": [
           {
-            "name": "id",
+            "name": "user_uuid",
             "in": "path",
             "required": true,
-            "description": "A unique integer value identifying this user.",
+            "description": "A UUID string identifying this user.",
             "schema": {
               "type": "string"
             }
