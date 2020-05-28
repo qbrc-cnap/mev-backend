@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="410mm"
+   height="397mm"
+   viewBox="0 0 410 397"
+   version="1.1"
+   id="svg1905"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="validation_flow.svg">
+  <defs
+     id="defs1899">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4028"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4026"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3012"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3010"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker2937"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path2935"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path2585"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3012-9"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3010-3"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker2937-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path2935-0"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3012-2"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3010-2"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker2937-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:collect="always">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path2935-7"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4028-0"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4026-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="868.13273"
+     inkscape:cy="701.42136"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="3840"
+     inkscape:window-height="2049"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1902">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,100)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#221f19;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect815"
+       width="74.177826"
+       height="49.420387"
+       x="149.12035"
+       y="14.150435"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833328px;line-height:1.25;font-family:'Berenis ADF Pro';-inkscape-font-specification:'Berenis ADF Pro';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="154.3701"
+       y="21.348194"
+       id="text819"><tspan
+         sodipodi:role="line"
+         x="154.3701"
+         y="22.274237"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan1897" /><tspan
+         sodipodi:role="line"
+         x="154.3701"
+         y="26.683958"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan839">- resource_type = null</tspan><tspan
+         sodipodi:role="line"
+         x="154.3701"
+         y="32.416595"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan841">- is_active = False</tspan><tspan
+         sodipodi:role="line"
+         x="154.3701"
+         y="38.149235"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan843">- is_public = &lt;T|F&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="154.3701"
+         y="43.881874"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan845">- status = &quot;Validating&quot;</tspan><tspan
+         sodipodi:role="line"
+         x="154.3701"
+         y="49.614513"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan866">- path = &lt;tmp path&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="154.3701"
+         y="55.347153"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan868">- has_valid_resource_type = False</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833328px;line-height:1.25;font-family:'Berenis ADF Pro';-inkscape-font-specification:'Berenis ADF Pro';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="163.18947"
+       y="11.746971"
+       id="text819-7-2"><tspan
+         sodipodi:role="line"
+         x="163.18947"
+         y="11.746971"
+         style="font-size:4.58611107px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan964">Initial upload</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#221f19;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect934"
+       width="33.734375"
+       height="15.874999"
+       x="169.47092"
+       y="77.076111" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833328px;line-height:1.25;font-family:'Berenis ADF Pro';-inkscape-font-specification:'Berenis ADF Pro';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="186.19647"
+       y="83.218277"
+       id="text819-7-2-3"><tspan
+         sodipodi:role="line"
+         x="186.88618"
+         y="83.218277"
+         style="font-size:4.58611107px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan930-9">Requested type </tspan><tspan
+         sodipodi:role="line"
+         x="186.19647"
+         y="88.950912"
+         style="font-size:4.58611107px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan964-6">is valid?</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 185.80424,64.300235 V 76.327366"
+       id="path2580"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#221f19;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect815-3"
+       width="75.734909"
+       height="49.420387"
+       x="58.067219"
+       y="115.56664"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833328px;line-height:1.25;font-family:'Berenis ADF Pro';-inkscape-font-specification:'Berenis ADF Pro';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="61.846996"
+       y="123.03171"
+       id="text819-6"><tspan
+         sodipodi:role="line"
+         id="tspan817-0"
+         x="61.846996"
+         y="123.95775"
+         style="font-size:4.58611107px;stroke-width:0.26458332" /><tspan
+         sodipodi:role="line"
+         x="61.846996"
+         y="128.36746"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan839-6">- resource_type = &lt;type string&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="61.846996"
+         y="134.1001"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan841-2">- is_active = True</tspan><tspan
+         sodipodi:role="line"
+         x="61.846996"
+         y="139.83275"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan843-6">- is_public = &lt;T|F&gt; (user's choice)</tspan><tspan
+         sodipodi:role="line"
+         x="61.846996"
+         y="145.56538"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan845-1">- status = &quot;ready&quot;</tspan><tspan
+         sodipodi:role="line"
+         x="61.846996"
+         y="151.29802"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan866-8">- path = &lt;final path&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="61.846996"
+         y="157.03065"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan868-7">- has_valid_resource_type = True</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833328px;line-height:1.25;font-family:'Berenis ADF Pro';-inkscape-font-specification:'Berenis ADF Pro';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="148.271"
+       y="100.99115"
+       id="text819-7-2-2"><tspan
+         sodipodi:role="line"
+         x="148.271"
+         y="100.99115"
+         style="font-size:4.58611107px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan964-9">Yes</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833328px;line-height:1.25;font-family:'Berenis ADF Pro';-inkscape-font-specification:'Berenis ADF Pro';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="42.152313"
+       y="88.723564"
+       id="text819-7-6"><tspan
+         sodipodi:role="line"
+         x="42.152313"
+         y="88.723564"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan1087-9">Things that change:</tspan><tspan
+         sodipodi:role="line"
+         x="42.152313"
+         y="94.4562"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan1923">- reset the resource_type</tspan><tspan
+         sodipodi:role="line"
+         x="42.152313"
+         y="100.18884"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan1925">- set active = True</tspan><tspan
+         sodipodi:role="line"
+         x="42.152313"
+         y="105.92148"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan1931">- set status to &quot;ready&quot;</tspan><tspan
+         sodipodi:role="line"
+         x="42.152313"
+         y="111.65412"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan1933">- set has_valid_resource_type = True</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker2937)"
+       d="M 169.47159,92.951117 133.80231,115.56658"
+       id="path2927"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#221f19;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect815-7"
+       width="74.177826"
+       height="49.420387"
+       x="239.0005"
+       y="114.82648"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833328px;line-height:1.25;font-family:'Berenis ADF Pro';-inkscape-font-specification:'Berenis ADF Pro';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="244.25027"
+       y="122.02428"
+       id="text819-5"><tspan
+         sodipodi:role="line"
+         x="244.25027"
+         y="122.95033"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan1897-3" /><tspan
+         sodipodi:role="line"
+         x="244.25027"
+         y="127.36005"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan839-5">- resource_type = null</tspan><tspan
+         sodipodi:role="line"
+         x="244.25027"
+         y="133.09268"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan841-6">- is_active = False</tspan><tspan
+         sodipodi:role="line"
+         x="244.25027"
+         y="138.82532"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan843-2">- is_public = &lt;T|F&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="244.25027"
+         y="144.55795"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan845-9">- status = &quot;Failed&quot;</tspan><tspan
+         sodipodi:role="line"
+         x="244.25027"
+         y="150.29059"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan866-1">- path = &lt;tmp path&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="244.25027"
+         y="156.02324"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan868-2">- has_valid_resource_type = False</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker3012)"
+       d="M 203.20529,92.951117 239.0005,114.82641"
+       id="path3002"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833328px;line-height:1.25;font-family:'Berenis ADF Pro';-inkscape-font-specification:'Berenis ADF Pro';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="224.45317"
+       y="100.67337"
+       id="text819-7-2-2-7"><tspan
+         sodipodi:role="line"
+         x="224.45317"
+         y="100.67337"
+         style="font-size:4.58611107px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan964-9-0">No</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#221f19;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect934-6"
+       width="33.734375"
+       height="15.874999"
+       x="176.57042"
+       y="189.48389" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833328px;line-height:1.25;font-family:'Berenis ADF Pro';-inkscape-font-specification:'Berenis ADF Pro';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="193.29596"
+       y="195.62605"
+       id="text819-7-2-3-1"><tspan
+         sodipodi:role="line"
+         x="193.98567"
+         y="195.62605"
+         style="font-size:4.58611107px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan930-9-8">Requested type </tspan><tspan
+         sodipodi:role="line"
+         x="193.29596"
+         y="201.35869"
+         style="font-size:4.58611107px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan964-6-7">change is valid?</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833328px;line-height:1.25;font-family:'Berenis ADF Pro';-inkscape-font-specification:'Berenis ADF Pro';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="155.37048"
+       y="213.39893"
+       id="text819-7-2-2-2"><tspan
+         sodipodi:role="line"
+         x="155.37048"
+         y="213.39893"
+         style="font-size:4.58611107px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan964-9-02">Yes</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker2937-6)"
+       d="M 176.57108,205.35878 140.9018,227.97424"
+       id="path2927-3"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker3012-9)"
+       d="M 210.30478,205.35878 246.1,227.23407"
+       id="path3002-7"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833328px;line-height:1.25;font-family:'Berenis ADF Pro';-inkscape-font-specification:'Berenis ADF Pro';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="231.55267"
+       y="213.08112"
+       id="text819-7-2-2-7-5"><tspan
+         sodipodi:role="line"
+         x="231.55267"
+         y="213.08112"
+         style="font-size:4.58611107px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan964-9-0-9">No</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker3012-2)"
+       d="m 133.80212,164.98697 42.76831,24.49682"
+       id="path3002-8"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker2937-9)"
+       d="m 239.0005,164.24678 -28.69571,25.23699"
+       id="path2927-36"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833328px;line-height:1.25;font-family:'Berenis ADF Pro';-inkscape-font-specification:'Berenis ADF Pro';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="247.52286"
+       y="233.03366"
+       id="text819-7-2-3-1-1"><tspan
+         sodipodi:role="line"
+         x="247.52286"
+         y="233.03366"
+         style="font-size:4.58611107px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan3950">No change.  Inform of failure</tspan><tspan
+         sodipodi:role="line"
+         x="247.52286"
+         y="238.7663"
+         style="font-size:4.58611107px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan3954">to change via status message</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833328px;line-height:1.25;font-family:'Berenis ADF Pro';-inkscape-font-specification:'Berenis ADF Pro';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="114.82247"
+       y="207.50943"
+       id="text819-7-2-3-1-1-3"><tspan
+         sodipodi:role="line"
+         x="114.82247"
+         y="207.50943"
+         style="font-size:4.58611107px;text-align:center;text-anchor:middle;stroke-width:0.26458332"
+         id="tspan3954-9">Edit resource_type</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#221f19;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect815-3-4"
+       width="75.734909"
+       height="49.420387"
+       x="65.166893"
+       y="227.97424"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.05833328px;line-height:1.25;font-family:'Berenis ADF Pro';-inkscape-font-specification:'Berenis ADF Pro';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="68.946671"
+       y="235.43927"
+       id="text819-6-7"><tspan
+         sodipodi:role="line"
+         id="tspan817-0-8"
+         x="68.946671"
+         y="236.36531"
+         style="font-size:4.58611107px;stroke-width:0.26458332" /><tspan
+         sodipodi:role="line"
+         x="68.946671"
+         y="240.77504"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan839-6-4">- resource_type = &lt;type string&gt; (new)</tspan><tspan
+         sodipodi:role="line"
+         x="68.946671"
+         y="246.50768"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan841-2-5">- is_active = True</tspan><tspan
+         sodipodi:role="line"
+         x="68.946671"
+         y="252.24031"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan843-6-0">- is_public = &lt;T|F&gt; (user's choice)</tspan><tspan
+         sodipodi:role="line"
+         x="68.946671"
+         y="257.97296"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan845-1-3">- status = &quot;ready&quot;</tspan><tspan
+         sodipodi:role="line"
+         x="68.946671"
+         y="263.7056"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan866-8-6">- path = &lt;final path&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="68.946671"
+         y="269.43823"
+         style="font-size:4.58611107px;stroke-width:0.26458332"
+         id="tspan868-7-1">- has_valid_resource_type = True</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4028)"
+       d="m 64.765989,260.28937 c 0,0 -34.942202,-12.6653 -41.513541,-33.58127 -10.904944,-34.70944 36.442182,-42.19694 55.992966,-43.69856 16.875476,-1.29614 97.325006,6.47435 97.325006,6.47435"
+       id="path4018"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4028-0)"
+       d="m 278.41388,240.03456 c 0,0 25.27662,0.61528 27.88279,-21.15323 2.61959,-21.88051 -3.43439,-32.17434 -22.98518,-33.67596 -16.87547,-1.29614 -73.0067,4.27852 -73.0067,4.27852"
+       id="path4018-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssc" />
+  </g>
+</svg>

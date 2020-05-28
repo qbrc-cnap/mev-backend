@@ -70,7 +70,13 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../workspaces/">Workspaces</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../resources/">Resources</a>
+                <li class="toctree-l2"><a class="reference internal" href="#">Resources</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../resources/">General info</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../resource_types/">Resource types</a>
+                </li>
+    </ul>
                 </li>
     </ul>
                     </li>
@@ -121,7 +127,8 @@
             <div class="section">
               
                 <h3 id="attributes"><a class="toclink" href="#attributes">Attributes</a></h3>
-<p>Attributes are a way to add information to <a href="../elements/"><code>Observation</code> or <code>Feature</code></a> instances.  For example, one could specify the phenotype or experimental group.</p>
+<p><code>Attribute</code>s could also be thought of as "parameters" and are a way of providing validated key-value pairs.  The different types enforce various constraints on the underlying primitive type (e.g. a float bounded between [0,1] can represent a probability).</p>
+<p>Mainly, <code>Attribute</code>s are a way to add information to <a href="../elements/"><code>Observation</code> or <code>Feature</code></a> instances.  For example, one could specify the phenotype or experimental group of an <code>Observation</code> via a <code>StringAttribute</code>.</p>
 <div class="autodoc">
 <div class="autodoc-signature"><em>class </em><code>api.data_structures.attributes.<strong>BaseAttribute</strong></code><span class="autodoc-punctuation">(</span><em class="autodoc-param">value</em><span class="autodoc-punctuation">, </span><em class="autodoc-param">**kwargs</em><span class="autodoc-punctuation">)</span></div>
 <div class="autodoc-docstring"><p>Base object which defines some common methods and members
