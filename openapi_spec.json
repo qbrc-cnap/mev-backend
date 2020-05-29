@@ -418,10 +418,7 @@
                         "format": "date-time",
                         "readOnly": true
                       }
-                    },
-                    "required": [
-                      "owner_email"
-                    ]
+                    }
                   }
                 }
               }
@@ -447,10 +444,7 @@
                     "type": "string",
                     "format": "email"
                   }
-                },
-                "required": [
-                  "owner_email"
-                ]
+                }
               }
             },
             "application/x-www-form-urlencoded": {
@@ -464,10 +458,7 @@
                     "type": "string",
                     "format": "email"
                   }
-                },
-                "required": [
-                  "owner_email"
-                ]
+                }
               }
             },
             "multipart/form-data": {
@@ -481,10 +472,7 @@
                     "type": "string",
                     "format": "email"
                   }
-                },
-                "required": [
-                  "owner_email"
-                ]
+                }
               }
             }
           }
@@ -517,10 +505,7 @@
                       "format": "date-time",
                       "readOnly": true
                     }
-                  },
-                  "required": [
-                    "owner_email"
-                  ]
+                  }
                 }
               }
             },
@@ -572,10 +557,7 @@
                       "format": "date-time",
                       "readOnly": true
                     }
-                  },
-                  "required": [
-                    "owner_email"
-                  ]
+                  }
                 }
               }
             },
@@ -610,10 +592,7 @@
                     "type": "string",
                     "format": "email"
                   }
-                },
-                "required": [
-                  "owner_email"
-                ]
+                }
               }
             },
             "application/x-www-form-urlencoded": {
@@ -627,10 +606,7 @@
                     "type": "string",
                     "format": "email"
                   }
-                },
-                "required": [
-                  "owner_email"
-                ]
+                }
               }
             },
             "multipart/form-data": {
@@ -644,10 +620,7 @@
                     "type": "string",
                     "format": "email"
                   }
-                },
-                "required": [
-                  "owner_email"
-                ]
+                }
               }
             }
           }
@@ -680,10 +653,7 @@
                       "format": "date-time",
                       "readOnly": true
                     }
-                  },
-                  "required": [
-                    "owner_email"
-                  ]
+                  }
                 }
               }
             },
@@ -779,10 +749,7 @@
                       "format": "date-time",
                       "readOnly": true
                     }
-                  },
-                  "required": [
-                    "owner_email"
-                  ]
+                  }
                 }
               }
             },
@@ -1779,7 +1746,7 @@
     "/api/": {
       "get": {
         "operationId": "listApiRoots",
-        "description": "",
+        "description": "Lists the available \"base\" endpoints.",
         "parameters": [],
         "responses": {
           "200": {
@@ -1963,7 +1930,7 @@
     "/api/workspaces/{workspace_pk}/resources/add/": {
       "post": {
         "operationId": "CreateWorkspaceResourceAdd",
-        "description": "This class handles adding Resource instances to a specific workspace\n\nWhen we add Resources to a workspace, we make a copy so that the \noriginal data remains unmodified.",
+        "description": "This endpoint adds a Resource instance to a specific Workspace.",
         "parameters": [
           {
             "name": "workspace_pk",
