@@ -55,6 +55,10 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Install</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#dockerhub-image">Dockerhub image</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#local-build">Local build</a>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -129,6 +133,42 @@
             <div class="section">
               
                 <h2 id="installation-instructions"><a class="toclink" href="#installation-instructions">Installation instructions</a></h2>
+<h4 id="dockerhub-image"><a class="toclink" href="#dockerhub-image">Dockerhub image</a></h4>
+<p>TODO</p>
+<h4 id="local-build"><a class="toclink" href="#local-build">Local build</a></h4>
+<p>The application is packaged as a Docker for easier management of dependencies.  To build the Docker image yourself, you will need to have Docker installed locally.</p>
+<p>To build the application, clone the repository locally:</p>
+<pre class="codehilite"><code>git clone https://github.com/qbrc-cnap/mev-backend.git</code></pre>
+
+
+<p>Navigate into that cloned directory and build the Docker image with:</p>
+<pre class="codehilite"><code>docker build -t &lt;image name&gt; .</code></pre>
+
+
+<p>To run the container, you will need to supply some environment variables for things like passwords and other sensitive information.  In the repository is a file named <code>env_vars.template.txt</code>.  Fill that in with the various usernames and passwords as you like.  In particular, if you are running a local development version, you will need to specify:</p>
+<pre class="codehilite"><code>ENVIRONMENT=dev</code></pre>
+
+
+<p>Additionally, specify the same value (an email address) for both <code>DJANGO_SUPERUSER_EMAIL</code> and <code>DJANGO_SUPERUSER_USERNAME</code>.  This is because MEV uses emails as the unique usernames.</p>
+<p>If you would like some "dummy" data to be entered into the database (e.g. for developing a front-end), you must also specify <code>POPULUATE_DB=yes</code> (case-sensitive!).  Any other values for this variable will skip the population of dummy data.</p>
+<p>To run the container:</p>
+<pre class="codehilite"><code>docker run -it --env-file &lt;ENV VARS&gt; -p8000:8000 &lt;DOCKER IMAGE NAME&gt; --bind 0.0.0.0:8000</code></pre>
+
+
+<p>Note the following:</p>
+<ul>
+<li>We bind port 8000 <em>inside</em> the container to 8000 <em>outside</em> the container.</li>
+<li>Due to the use of <code>ENTRYPOINT</code> in the Dockerfile, the commands following the image name (e.g. <code>--bind 0.0.0.0:8000</code> above) will be appended to the command:</li>
+</ul>
+<pre class="codehilite"><code>gunicorn mev.wsgi:application</code></pre>
+
+
+<p>Therefore, for the example given above, the full command on startup would then be,</p>
+<pre class="codehilite"><code>gunicorn mev.wsgi:application --bind 0.0.0.0:8000</code></pre>
+
+
+<p>which starts <code>gunicorn</code> and listens for connections on <code>0.0.0.0:8000</code>.  This allows one to access the API from outside the container. Note that additional gunicorn configuration parameters can be specified (see https://docs.gunicorn.org/en/latest/configure.html). </p>
+<p>At this point you may go to your browser and navigate to http://127.0.0.1:8000/api/.  You will need to login with the username (email) and password you gave in your file of environment variables.</p>
               
             </div>
           </div>
