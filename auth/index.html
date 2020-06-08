@@ -132,7 +132,33 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="docs-on-authentication"><a class="toclink" href="#docs-on-authentication">Docs on authentication</a></h2>
+                <h2 id="authentication-with-mev"><a class="toclink" href="#authentication-with-mev">Authentication with MEV</a></h2>
+<p>Once a user is registered (with an email and password), requests to the API are controlled with a JWT contained in the request header.  Below is an example using Python's Requests library.  This example assumes you have created a user. </p>
+<p>First, exchange the username/password to get the API token:</p>
+<pre class="codehilite"><code>import requests
+token_url = 'http://127.0.0.1:8000/api/token/'
+payload = {'email': '&lt;EMAIL&gt;', 'password': '&lt;PASSWD&gt;'}
+token_response = requests.post(token_url, data=payload)
+token_json = token_response.json()</code></pre>
+
+
+<p>Then, looking at <code>token_json</code>:</p>
+<pre class="codehilite"><code>{'refresh': '&lt;REFRESH TOKEN&gt;', 'access': '&lt;ACCESS_TOKEN&gt;'}</code></pre>
+
+
+<p>We can then use that token in requests to the API:</p>
+<pre class="codehilite"><code>access_token = token_json['access']
+resource_list_url = 'http://127.0.0.1:8000/api/resources/'
+headers = {'Authorization': 'Bearer %s' % access_token}
+resource_response = requests.get(resource_list_url, headers=headers)
+resource_json = resource_response.json()</code></pre>
+
+
+<p>If the token expires (a 401 response), you need to request a new token or refresh:</p>
+<pre class="codehilite"><code>refresh_url = 'http://127.0.0.1:8000/api/token/refresh/'
+payload = {'refresh': refresh_token}
+refresh_response = requests.post(refresh_url, data=payload)
+access_token = refresh_response.json()['access']</code></pre>
               
             </div>
           </div>

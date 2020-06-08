@@ -163,7 +163,10 @@ type of data that can be represented as rows and columns.</p>
 saved in CSV, TSV, or Excel (xls/xlsx) format.  If in Excel format, the
 data of interest must reside in the first sheet of the workbook.</p>
 <p>Special tab-delimited files like BED or VCF files are recognized by
-their canonical extension (e.g. ".bed" or ".vcf").</p></div>
+their canonical extension (e.g. ".bed" or ".vcf").</p>
+<p>Note that unless you create a "specialized" implementation (e.g. like
+for a BED file), then we assume you have features as rows and observables
+as columns.</p></div>
 </div>
 <div class="autodoc">
 <div class="autodoc-signature"><em>class </em><code>api.resource_types.table_types.<strong>Matrix</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
@@ -178,8 +181,8 @@ to admit only integers.</p></div>
 <div class="autodoc">
 <div class="autodoc-signature"><em>class </em><code>api.resource_types.table_types.<strong>AnnotationTable</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
 <div class="autodoc-docstring"><p>An <code>AnnotationTable</code> is a special type of table that will be responsible
-for annotating samples (e.g. adding sample names and
-associated attributes like experimental group or other covariates).</p>
+for annotating Observations/samples (e.g. adding sample names and
+associated attributes like experimental group or other covariates)</p>
 <p>The first column will give the sample names and the remaining columns will
 each individually represent different covariates associated with that sample.</p></div>
 </div>
