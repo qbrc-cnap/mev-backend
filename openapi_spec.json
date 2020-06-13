@@ -1637,6 +1637,54 @@
         }
       }
     },
+    "/api/resources/{id}/metadata/": {
+      "get": {
+        "operationId": "RetrieveResourceMetadata",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "resource": {
+                      "type": "string"
+                    },
+                    "parent_operation": {
+                      "type": "string",
+                      "nullable": true
+                    },
+                    "observation_set": {
+                      "type": "object",
+                      "nullable": true
+                    },
+                    "feature_set": {
+                      "type": "object",
+                      "nullable": true
+                    }
+                  },
+                  "required": [
+                    "resource"
+                  ]
+                }
+              }
+            },
+            "description": ""
+          }
+        }
+      }
+    },
     "/api/resources/upload/progress": {
       "get": {
         "operationId": "listResourceUploadProgress",
