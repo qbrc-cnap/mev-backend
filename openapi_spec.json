@@ -843,6 +843,10 @@
                       "size": {
                         "type": "integer",
                         "readOnly": true
+                      },
+                      "readable_resource_type": {
+                        "type": "string",
+                        "readOnly": true
                       }
                     }
                   }
@@ -1054,6 +1058,10 @@
                     "size": {
                       "type": "integer",
                       "readOnly": true
+                    },
+                    "readable_resource_type": {
+                      "type": "string",
+                      "readOnly": true
                     }
                   }
                 }
@@ -1136,6 +1144,10 @@
                     },
                     "size": {
                       "type": "integer",
+                      "readOnly": true
+                    },
+                    "readable_resource_type": {
+                      "type": "string",
                       "readOnly": true
                     }
                   }
@@ -1357,6 +1369,10 @@
                     "size": {
                       "type": "integer",
                       "readOnly": true
+                    },
+                    "readable_resource_type": {
+                      "type": "string",
+                      "readOnly": true
                     }
                   }
                 }
@@ -1577,6 +1593,10 @@
                     "size": {
                       "type": "integer",
                       "readOnly": true
+                    },
+                    "readable_resource_type": {
+                      "type": "string",
+                      "readOnly": true
                     }
                   }
                 }
@@ -1780,6 +1800,10 @@
                       "size": {
                         "type": "integer",
                         "readOnly": true
+                      },
+                      "readable_resource_type": {
+                        "type": "string",
+                        "readOnly": true
                       }
                     }
                   }
@@ -1951,6 +1975,108 @@
                     "refresh"
                   ]
                 }
+              }
+            },
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/users/register/": {
+      "post": {
+        "operationId": "CreateUserRegister",
+        "description": "Used to register a new user by email/password",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/users/activate/": {
+      "post": {
+        "operationId": "CreateUserActivate",
+        "description": "This validates the uid/token and activates the user once they click on\nthe link in their email",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/users/resend-activation/": {
+      "post": {
+        "operationId": "CreateResendActivation",
+        "description": "If a user's token expires, they exist in our system, but can't\nactivate.  This sends them another email with a new token",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/users/reset-password/confirm/": {
+      "post": {
+        "operationId": "CreatePasswordResetConfirm",
+        "description": "Used when a user has clicked on a reset link\nand is sending a UID (encoded), a token, a new password,\nand a re-typed confirmation of that password",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/users/reset-password/": {
+      "post": {
+        "operationId": "CreatePasswordReset",
+        "description": "Used when a user has forgotten password and\nwants to reset.  Initiates the reset flow\nincluding the sending of confirmation password.",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api/users/change-password/": {
+      "post": {
+        "operationId": "CreatePasswordChange",
+        "description": "For changing password (once authenticated)",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
               }
             },
             "description": ""

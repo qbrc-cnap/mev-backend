@@ -156,7 +156,7 @@
 <p>Sequence-based formats are formats like FastQ, Fasta, or SAM/BAM. </p>
 <h4 id="table-based-resource-types"><a class="toclink" href="#table-based-resource-types">Table-based resource types</a></h4>
 <div class="autodoc">
-<div class="autodoc-signature"><em>class </em><code>api.resource_types.table_types.<strong>TableResource</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
+<div class="autodoc-signature"><em>class </em><code>resource_types.table_types.<strong>TableResource</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
 <div class="autodoc-docstring"><p>The <code>TableResource</code> is the most generic form of a delimited file.  Any
 type of data that can be represented as rows and columns.</p>
 <p>This or any of the more specific subclasses can be contained in files
@@ -169,17 +169,17 @@ for a BED file), then we assume you have features as rows and observables
 as columns.</p></div>
 </div>
 <div class="autodoc">
-<div class="autodoc-signature"><em>class </em><code>api.resource_types.table_types.<strong>Matrix</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
+<div class="autodoc-signature"><em>class </em><code>resource_types.table_types.<strong>Matrix</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
 <div class="autodoc-docstring"><p>A <code>Matrix</code> is a delimited table-based file that has only numeric types.
 These types can be mixed, like floats and integers</p></div>
 </div>
 <div class="autodoc">
-<div class="autodoc-signature"><em>class </em><code>api.resource_types.table_types.<strong>IntegerMatrix</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
+<div class="autodoc-signature"><em>class </em><code>resource_types.table_types.<strong>IntegerMatrix</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
 <div class="autodoc-docstring"><p>An <code>IntegerMatrix</code> further specializes the <code>Matrix</code>
 to admit only integers.</p></div>
 </div>
 <div class="autodoc">
-<div class="autodoc-signature"><em>class </em><code>api.resource_types.table_types.<strong>AnnotationTable</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
+<div class="autodoc-signature"><em>class </em><code>resource_types.table_types.<strong>AnnotationTable</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
 <div class="autodoc-docstring"><p>An <code>AnnotationTable</code> is a special type of table that will be responsible
 for annotating Observations/samples (e.g. adding sample names and
 associated attributes like experimental group or other covariates)</p>
@@ -211,7 +211,7 @@ each individually represent different covariates associated with that sample.</p
 <p>Then this table can be used to create <code>Attribute</code>s which can be added to
 the <code>Observation</code>s.  After the annotations are uploaded, the users must tell MEV how to interpret the columns (e.g. as a string?  as a bounded float?), but once that type is specified, we can validate the annotations against that choice and subsequently add the <code>Attribute</code>s to the <code>Observation</code>s. </p>
 <div class="autodoc">
-<div class="autodoc-signature"><em>class </em><code>api.resource_types.table_types.<strong>BEDFile</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
+<div class="autodoc-signature"><em>class </em><code>resource_types.table_types.<strong>BEDFile</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
 <div class="autodoc-docstring"><p>A file format that corresponds to the BED format.  This is
 the minimal BED format, which has:</p>
 <ul>
@@ -224,7 +224,7 @@ the minimal BED format, which has:</p>
 </div>
 <h4 id="sequence-based-formats"><a class="toclink" href="#sequence-based-formats">Sequence-based formats</a></h4>
 <div class="autodoc">
-<div class="autodoc-signature"><em>class </em><code>api.resource_types.sequence_types.<strong>SequenceResource</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
+<div class="autodoc-signature"><em>class </em><code>resource_types.sequence_types.<strong>SequenceResource</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
 <div class="autodoc-docstring"><p>This class is used to represent sequence-based files
 such as Fasta, Fastq, SAM/BAM</p>
 <p>We cannot (reasonably) locally validate the contents of these
@@ -232,7 +232,7 @@ files quickly or exhaustively, so minimal validation is performed
 remotely</p></div>
 </div>
 <div class="autodoc">
-<div class="autodoc-signature"><em>class </em><code>api.resource_types.sequence_types.<strong>FastAResource</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
+<div class="autodoc-signature"><em>class </em><code>resource_types.sequence_types.<strong>FastAResource</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
 <div class="autodoc-docstring"><p>This type is for validating Fasta files,
 compressed or not.  Fasta files are recognized using
 the following formats:</p>
@@ -244,7 +244,7 @@ the following formats:</p>
 </ul></div>
 </div>
 <div class="autodoc">
-<div class="autodoc-signature"><em>class </em><code>api.resource_types.sequence_types.<strong>FastQResource</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
+<div class="autodoc-signature"><em>class </em><code>resource_types.sequence_types.<strong>FastQResource</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
 <div class="autodoc-docstring"><p>This resource type is for Fastq files,
 compressed or not. Fastq files are recognized using
 the following formats:</p>
@@ -256,7 +256,7 @@ the following formats:</p>
 </ul></div>
 </div>
 <div class="autodoc">
-<div class="autodoc-signature"><em>class </em><code>api.resource_types.sequence_types.<strong>AlignedSequenceResource</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
+<div class="autodoc-signature"><em>class </em><code>resource_types.sequence_types.<strong>AlignedSequenceResource</strong></code><span class="autodoc-punctuation">(</span><span class="autodoc-punctuation">)</span></div>
 <div class="autodoc-docstring"><p>This resource type is for SAM/BAM files.  We accept
 both SAM and BAM files named using their canonical extensions:</p>
 <ul>
