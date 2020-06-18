@@ -2514,11 +2514,78 @@
         "operationId": "CreateResourceUpload",
         "description": "Endpoint for a direct upload to the server.",
         "parameters": [],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "properties": {
+                  "owner_email": {
+                    "type": "string",
+                    "format": "email"
+                  },
+                  "resource_type": {
+                    "enum": [
+                      "FQ",
+                      "FA",
+                      "ALN",
+                      "FT",
+                      "MTX",
+                      "I_MTX",
+                      "ANN",
+                      "BED"
+                    ]
+                  },
+                  "upload_file": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "is_public": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "resource_type",
+                  "upload_file"
+                ]
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "content": {
               "application/json": {
-                "schema": {}
+                "schema": {
+                  "properties": {
+                    "owner_email": {
+                      "type": "string",
+                      "format": "email"
+                    },
+                    "resource_type": {
+                      "enum": [
+                        "FQ",
+                        "FA",
+                        "ALN",
+                        "FT",
+                        "MTX",
+                        "I_MTX",
+                        "ANN",
+                        "BED"
+                      ]
+                    },
+                    "upload_file": {
+                      "type": "string",
+                      "format": "binary"
+                    },
+                    "is_public": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "resource_type",
+                    "upload_file"
+                  ]
+                }
               }
             },
             "description": ""
