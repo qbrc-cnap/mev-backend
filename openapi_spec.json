@@ -1984,8 +1984,8 @@
     },
     "/api/users/register/": {
       "post": {
-        "operationId": "CreateUserRegister",
-        "description": "Used to register a new user by email/password",
+        "operationId": "RegisterUser",
+        "description": "to register users",
         "parameters": [],
         "responses": {
           "200": {
