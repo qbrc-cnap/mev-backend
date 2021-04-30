@@ -44,7 +44,7 @@ PyYAML==5.3.1
 redis==3.5.2
 regex==2020.4.4
 requests==2.23.0
-rsa==4.6
+rsa==4.7
 six==1.14.0
 sqlparse==0.3.1
 tornado==6.0.4
